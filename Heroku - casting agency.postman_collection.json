@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "dde88c7a-1cd4-472e-bb82-fd836312d0a4",
+		"name": "Heroku - casting agency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "casting assistant",
+			"item": [
+				{
+					"name": "get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJMejZSMElWUnRpRDh4cXNEalY1NSJ9.eyJpc3MiOiJodHRwczovL2xibHVpdHQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwZjZhNzViNjEwYTc2MDA2OWVjOWQ0ZCIsImF1ZCI6Imh0dHBzOi8vY2FzdGluZy1hZ2VuY3kvIiwiaWF0IjoxNjMwOTY3MzU3LCJleHAiOjE2MzEwNTM3NTcsImF6cCI6ImlOMzQ2TjlpVGhEbnFJc1VwT1Nod0xSRkdJZUtVM3NqIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.Ma7rNY7SQURzUzWuyZA9PbVf7B-gsJr0-Eruuz82LCJzA8XbhBNAZ8umXZd6JPaQ2TkC5w_Xu-QEQIltk73lh2VaVjZUyBB3bj6Xy3CEvwJbIqj9_JaRU7MXcZpl9WIu58d7xV8MhxgRcw-buCKLn_OH2ewm2Y7V4aR6BHu4plPX1rRlx0GWhwyu3aHhf-iPiihAH7EDgpWjImIvnXhVGC6QyoziCK8cyCL-4QHhjjEfMAFpCY7FSy-tgFZAEP-7Xkeh8fFOnLB9KPdox1fKy-xnc6_M5TeGd-KeZLWlIeRomi1E2WSvf9nsw9uGmYWpbLBK0kD24e2NHf2TJhn7kg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "casting director",
+			"item": [
+				{
+					"name": "get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post actors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Amanda Start\",\n    \"birthdate\":\"1990-1-1\",\n    \"gender\":\"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete actors",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors/7",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch actors",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gender\":\"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch movies",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"looking stars\",\n    \"release_date\":\"2020-1-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJMejZSMElWUnRpRDh4cXNEalY1NSJ9.eyJpc3MiOiJodHRwczovL2xibHVpdHQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwZjZhNzViNjEwYTc2MDA2OWVjOWQ0ZCIsImF1ZCI6Imh0dHBzOi8vY2FzdGluZy1hZ2VuY3kvIiwiaWF0IjoxNjMwOTY3NDYzLCJleHAiOjE2MzEwNTM4NjMsImF6cCI6ImlOMzQ2TjlpVGhEbnFJc1VwT1Nod0xSRkdJZUtVM3NqIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.UzhLOnoylB_dx1qhgooJz94V8MdAmqWO3WlFjMRV4QqE83vurG2mFHm7ZqRqDsJnjl_WrxsDxqCBAe1UHVBbd2lkIrxM-4KGQb3HjJQvOAg-fuG7R2VGvLaTdQNrVlKAm8I_OSLD-xM9UXsTl7Q4M22zIY6rkr1fE9J5RMDkzT4BOfctDud83nmhd8kZqtvBrsKYpRyEIuci2dTggEdNq3aSoRHu4AX0kyZU0osHmHl8V_SB2SzOq7Y8RxGHGUKWdQvU-h-x3IOEPhzq5sFOWn-tK6nZ_4Tf7SJzM-PzYscEI76EnVNIJ3-0RanL5WBW4Xt4p-S1j0fV7R2QUT76_A",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "executive producer",
+			"item": [
+				{
+					"name": "get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post actors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Danna Bell\",\n    \"birthdate\":\"1990-1-1\",\n    \"gender\":\"F\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post movies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Rain\",\n    \"release_date\":\"2000-1-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors/8",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies/7",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch actors",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gender\":\"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch movies",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"looking stars\",\n    \"release_date\":\"2020-1-1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-appl.herokuapp.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"casting-agency-appl",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJMejZSMElWUnRpRDh4cXNEalY1NSJ9.eyJpc3MiOiJodHRwczovL2xibHVpdHQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwZjZhNzViNjEwYTc2MDA2OWVjOWQ0ZCIsImF1ZCI6Imh0dHBzOi8vY2FzdGluZy1hZ2VuY3kvIiwiaWF0IjoxNjMwOTY3NTM4LCJleHAiOjE2MzEwNTM5MzgsImF6cCI6ImlOMzQ2TjlpVGhEbnFJc1VwT1Nod0xSRkdJZUtVM3NqIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.UBssIcCvrGzMmr0UExFtcC-5Zvaku6UhVtXQVm-CQ5oiXjCaDi7U6D9v6UxI4477BYY-wRJy4yJLsldX_LTpR1i6LvofYwD9cLyHu2L6UbjebD1SvqZ4JSsKwYJzeOXb9DGOWjx2C6YdlMpOdYyLIQLdfOg687CrPZrbbSd7oHCr1Z9bmZ4BGE9rhURr77qyIHFMJ6XSaAnHY4sg6RaA8JPssyOd0LuWNrKGoytZhUZOiJTZT6zDc09XAU6OGrTAoUUCjPLbMFXe_IXn397ap7LPJi3J7o3hktkkkE8bcpLgJrayleC5ZgrGkbQOTpViE-Y5p1jDd5oJDtI2dXLmeg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJMejZSMElWUnRpRDh4cXNEalY1NSJ9.eyJpc3MiOiJodHRwczovL2xibHVpdHQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwZjZhNzViNjEwYTc2MDA2OWVjOWQ0ZCIsImF1ZCI6Imh0dHBzOi8vY2FzdGluZy1hZ2VuY3kvIiwiaWF0IjoxNjMwNzkxOTQ0LCJleHAiOjE2MzA4NzgzNDQsImF6cCI6ImlOMzQ2TjlpVGhEbnFJc1VwT1Nod0xSRkdJZUtVM3NqIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.ISgRuuLPpaAo0mYRPB7budBrLM59K0NzJbSte9j-y_gkZNAZPNGlmbH_A_-vHejoX1sw-UmwCpnvXNUreY2swNHLWVlpGgQfjEX_Z1W7peZiwEW9GXxj2B1oWkfgG5gjHyO13NErQ5i43_YrAdVVDvvq7zuO5j5H0Pf7U0ZL-OEVUsc1K1YB1cZoHvvzeb-oEOXD83xRSLjkWqbQUaQaWCBid8PsOWugiRHyeipCKILIWbdFnLQBgRtI0pTNdyJhdZb1PFcX_KYoukdnCjZ4bUUWqfENRSaAH_-Wd-B8NKQHbTjDtahIuo8hnnYp75Pu-JMVD_YiBm1y-kjQsbu3RA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
