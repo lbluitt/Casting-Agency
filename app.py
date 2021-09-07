@@ -46,7 +46,7 @@ def create_app(test_config=None):
 
 
   @app.route('/',methods=['GET'])
-  def index(): 
+  def index():
     return('Welcome to the casting agency app!')
 
 
@@ -276,5 +276,3 @@ app = create_app()
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080, debug=True)
-
-#     APP.run(host='0.0.0.0', port=8080, debug=True)
