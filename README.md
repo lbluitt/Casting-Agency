@@ -16,7 +16,7 @@ To bring up a hands-on project that can illustrate concepts learned, this projec
 Also, authentication and RBAC is required in order to make use of this application. For this first iteration on the implementation of this project, the project is available through a Backend API.
 
 ### Authentication
-This leverages authentication to [Auth0](https://auth0.com/). Roles and permissions are needed to make use of the app. The setup.sh file inclues pre-generated token for each available role to test the app.
+This leverages authentication to [Auth0](https://auth0.com/). Roles and permissions are needed to make use of the app. The setup.sh file inclues pre-generated JWT tokens for each available role to test the app.
 
 ### Roles
 #### Casting Assistant
