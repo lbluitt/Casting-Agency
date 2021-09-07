@@ -228,12 +228,26 @@ please note, including the --reload flag will help restarting the server wheneve
 
 
 ## Testing
-To run the available tests, run
+To run the available tests, run the following commands on the terminal
+
+Drop and create the database
 ```
 dropdb casting-agency
 createdb casting-agency
+```
+
+Export the needed environment variables
+```
 source setup.sh
+```
+
+Initialize the database
+```
 psql casting-agency < casting-agency.psql
+```
+
+Run the tests
+```
 python3 test_app.py
 ```
 
