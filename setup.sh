@@ -1,8 +1,4 @@
 # Database
-# export DB_HOST='localhost:5432'
-# export DB_USER='lbluitt'
-# export DB_PASSWORD='postgres'
-# export DB_NAME='casting-agency'
 export DATABASE_URL_TEST='postgresql://lbluitt:postgres@localhost:5432/casting-agency'
 export DATABASE_URL='postgres://llacipxmhnifsi:d03c1ac96848e682bc035ecd651f6a383e5909d392ae5df1195e55597e58a32e@ec2-18-235-45-217.compute-1.amazonaws.com:5432/d26adio5gatq1p'
 
