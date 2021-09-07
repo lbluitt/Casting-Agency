@@ -37,9 +37,9 @@ The app can be also set up locally as well.
 
 ### Installing Dependencies
 
-1. **Python 3.9** - Follow the documentation to install the lasted version of Python: [python docs] (https://www.python.org/downloads/)
+1. **Python 3.9** - Follow the documentation to install the lasted version of Python: [python docs](https://www.python.org/downloads/)
 
-2. **Miniconda** - Is highly recommended to use a virtual environment when using Python in your local machine to isolate dependencies per project. Follow the documentation to get this up and running: [conda docs] (https://docs.conda.io/en/latest/miniconda.html)
+2. **Miniconda** - Is highly recommended to use a virtual environment when using Python in your local machine to isolate dependencies per project. Follow the documentation to get this up and running: [conda docs](https://docs.conda.io/en/latest/miniconda.html)
 
 Once your environment is created, run the following line to activate it:
 ```
@@ -52,13 +52,13 @@ pip install -r requirements.txt
 ```
 
 4. **Key Dependencies**
-- [Flask] (https://flask.palletsprojects.com/) is used to handle requests and responses. It's a lightweight backend microservices framwork.
-- [jose] (https://python-jose.readthedocs.io/en/latest/) Used for verifying, encoding, and decoding Json Web Tokens (JWTs). Stands for JacaScript Object Signing and Endcryption.
-- [SQLALchemy] (https://www.sqlalchemy.org/) Python ORM that will me used to manage PostgreSQL.
-- [Flask-CORS] (https://flask-cors.readthedocs.io/en/latest/#) extension that will be used to manage CORS (cross origin requests).
+- [Flask](https://flask.palletsprojects.com/) is used to handle requests and responses. It's a lightweight backend microservices framwork.
+- [jose](https://python-jose.readthedocs.io/en/latest/) Used for verifying, encoding, and decoding Json Web Tokens (JWTs). Stands for JacaScript Object Signing and Endcryption.
+- [SQLALchemy](https://www.sqlalchemy.org/) Python ORM that will me used to manage PostgreSQL.
+- [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) extension that will be used to manage CORS (cross origin requests).
 
 ### Database Setup
-Start your [Postgres] (https://www.postgresql.org/download/) server:
+Start your [Postgres](https://www.postgresql.org/download/) server:
 ```
 pg_ctl -D /usr/local/var/postgres start
 ```
