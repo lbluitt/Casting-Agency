@@ -16,16 +16,16 @@ Also, authentication and RBAC is required in order to make use of this applicati
 ### Authentication
 This leverages authentication to **Auth0** [https://auth0.com/]. Roles and permissions are needed to make use of the app. The setup.sh file inclues pre-generated token for each available role to test the app.
 
-## Roles
-# Casting Assistant
+### Roles
+## Casting Assistant
 - Can get actors and movies
 
-# Casting Director
+## Casting Director
 - Can to perform all operations that the casting assistant has
 - Able to modify actors and movies
 - Able to add/delete actors
 
-# Executive Producer
+## Executive Producer
 - Can perform all operations that the Casting Director has
 - Able to add/delete movies
 
