@@ -95,7 +95,7 @@ please note, including the --reload flag will help restarting the server wheneve
 - Request Arguments: None
 - Returns: a list of dictionaries, where each dictionary contains id, name, gender and birthday for a given author
 
-****
+```
 {
     "actors": [
         {
@@ -113,7 +113,7 @@ please note, including the --reload flag will help restarting the server wheneve
     ],
     "success": true
 }
-****
+```
 
 
 **GET '/movies'**
