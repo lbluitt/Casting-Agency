@@ -2,14 +2,6 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-
-# DB_HOST = os.getenv('DB_HOST','localhost:5432')
-# DB_USER = os.getenv('DB_USER','lbluitt')
-# DB_PASSWORD = os.getenv('DB_PASSWORD','postgres')
-# DB_NAME = os.getenv('DB_NAME','casting-agency')
-# DB_PATH = 'postgresql://{}:{}@{}/{}'.format(DB_USER,DB_PASSWORD,DB_HOST,DB_NAME)
-#DB_PATH = os.environ.get('DATABASE_URL','postgresql://lbluitt:postgres@localhost:5432/casting-agency')
-
 if os.environ['ENVIRONMENT']=='TEST':
     DB_PATH = os.environ['DATABASE_URL_TEST']
 else:
