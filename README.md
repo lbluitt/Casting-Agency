@@ -2,6 +2,8 @@
 
 ## Udacity Casting Agency 
 
+### Introducion & Motivation for this project
+
 This project is aimed to demonstrate the knowledge acquired througout all the courses of Udacity's Full Stack Nanodegree, combining and not limited to showcase concepts about python, testing (unit tests), relational databases, authentication (using JWT), Role Based Access Control (RBAC) and deployment. 
 
 To bring up a hands-on project that can illustrate concepts learned, this project consists on an application - a casting agency - that is capable of managing Actors and Movies. This application allows you to:
